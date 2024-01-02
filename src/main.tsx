@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { App } from "./App.tsx";
-import { HomePage } from "./pages/HomePage.tsx";
+import { HomePage } from "./pages/homePage/HomePage.tsx";
 import { AboutMePage } from "./pages/AboutMePage.tsx";
 import { ProjectsPage } from "./pages/ProjectsPage.tsx";
 import { ContactPage } from "./pages/ContactPage.tsx";
