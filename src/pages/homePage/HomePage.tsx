@@ -1,5 +1,5 @@
 import photo from "../../assets/vita.jpeg";
-import styles from "./HomePage.module.scss";
+// import styles from "./HomePage.module.scss";
 
 export const HomePage = () => {
   return (
