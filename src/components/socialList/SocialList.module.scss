@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  gap: 8px;
+  // align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus-color);
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+  }
+}

@@ -29,22 +29,6 @@
   font-size: var(--third-text-size);
 }
 
-.list {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.icon {
-  fill: var(--secondary-text-color);
-  &:hover,
-  &:focus {
-    fill: var(--hover-focus-color);
-    transition: var(--animation-hover);
-    transform: var(--scale-transform-hover);
-  }
-}
-
 .photo {
   width: 380px;
   border-radius: 15px;
