@@ -17,7 +17,7 @@
 }
 
 .desrciption {
-  font-size: 24px;
+  font-size: var(--secondary-text-size);
   font-weight: 400;
   color: var(--primary-text-color);
   line-height: 2;
@@ -26,12 +26,23 @@
 
 .desc {
   color: var(--hover-focus-color);
+  font-size: var(--third-text-size);
 }
 
 .list {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+.icon {
+  fill: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus-color);
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+  }
 }
 
 .photo {
