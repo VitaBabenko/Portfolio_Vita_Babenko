@@ -1,6 +1,14 @@
 import { NavLink } from "react-router-dom";
 
-const headerMenu = [
+import styles from "./NavBar.module.scss";
+
+interface Menu {
+  id: number;
+  title: string;
+  path: string;
+}
+
+const headerMenu: Menu[] = [
   {
     id: 1,
     title: "Home",
@@ -24,11 +32,16 @@ const headerMenu = [
 ];
 
 export const NavBar = () => (
-  <>
+  <ul className={styles.list}>
     {headerMenu.map((item) => (
-      <NavLink to={item.path} key={item.id}>
-        {item.title}
-      </NavLink>
+      <li key={item.id}>
+        <NavLink
+          to={item.path}
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+        >
+          {item.title}
+        </NavLink>
+      </li>
     ))}
-  </>
+  </ul>
 );
