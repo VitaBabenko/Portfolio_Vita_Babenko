@@ -1,43 +1,103 @@
 .home_container {
   width: 100%;
-  padding: 100px 112px;
   margin-right: auto;
   margin-left: auto;
+  padding: 60px 16px;
+  text-align: center;
 
-  display: flex;
-  align-items: center;
-  gap: 150px;
+  @media screen and (min-width: 375px) {
+    max-width: 350px;
+  }
+
+  @media screen and (min-width: 475px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
+    padding: 80px 50px;
+    gap: 150px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1400px;
+    padding: 100px 112px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1900px;
+  }
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  margin-bottom: 48px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 2px 1px var(--third-background-color);
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 380px;
+    box-shadow: 40px 40px 2px 1px var(--third-background-color);
+    margin: 0;
+  }
 }
 
 .title {
-  font-size: var(--desktop-title-size);
-  font-weight: 700;
+  font-size: var(--third-text-size);
+  font-weight: 600;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--desktop-title-size);
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
 }
 
 .desrciption {
-  font-size: var(--secondary-text-size);
+  font-size: var(--footer-text-size);
   font-weight: 400;
   color: var(--primary-text-color);
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 1.2px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--secondary-text-size);
+  }
 }
 
 .desc {
   color: var(--hover-focus-color);
-  font-size: var(--third-text-size);
-}
+  font-size: var(--footer-text-size);
 
-.photo {
-  width: 380px;
-  border-radius: 15px;
-  box-shadow: 40px 40px 2px 1px var(--third-background-color);
+  @media screen and (min-width: 1280px) {
+    font-size: var(--third-text-size);
+  }
 }
 
 .wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-top: 50px;
   margin-bottom: 30px;
