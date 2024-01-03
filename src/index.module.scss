@@ -1,17 +1,20 @@
 :root {
-  --primary-text-size: 14px;
-  --secondary-text-size: 16px;
-  --third-text-size: 20px;
-  --header-text-size: 12px;
-  --mob-title-size: 32px;
-  --desktop-title-size: 40px;
-  --big-desctop-desc-size: 24px;
-  --big-desktop-title-size: 48px;
+  --primary-text-size: 18px;
+  --secondary-text-size: 20px;
+  --third-text-size: 30px;
+  --skills-text-size: 14px;
+  // --mob-title-size: 32px;
+  --desktop-title-size: 60px;
+  // --big-desctop-desc-size: 24px;
+  // --big-desktop-title-size: 48px;
 
-  --primary-text-color: #f6f7f9;
-  --secondary-text-color: #535bf2;
-  --third-text-color: #030712;
-  --hover-dark-grey-color: #474747;
+  --primary-background-color: #030712;
+  --secondary-background-color: #111827;
+  --third-background-color: #374151;
+  --primary-text-color: #d1d5db;
+  --secondary-text-color: #f9fafb;
+
+  --hover-focus-color: #14a800;
   --hover-light-grey-color: #cac9c9;
 
   --animation-hover: 0.3s ease-in-out;
@@ -19,11 +22,16 @@
 }
 
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  padding: 0;
+  // width: 100%;
+  // max-width: 100vw;
   margin: 0;
-  background-color: var(--primary-text-color);
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: var(--secondary-text-size);
+  font-style: normal;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
 }
 
 .visually-hidden {

@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  gap: 35px;
+}
+
+.link {
+  font-size: var(--secondary-text-size);
+  font-weight: 500;
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+  }
+}
+
+.active {
+  color: var(--hover-focus-color);
+  text-decoration: none;
+  font-size: var(--secondary-text-size);
+  font-weight: 500;
+}
