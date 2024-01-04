@@ -2,7 +2,7 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 60px 16px;
+  padding: 200px 16px;
 
   @media screen and (min-width: 375px) {
     max-width: 350px;
@@ -14,17 +14,17 @@
 
   @media screen and (min-width: 768px) {
     max-width: 720px;
-    padding: 50px 20px;
+    padding: 200px 20px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1200px;
-    padding: 80px 50px;
+    padding: 280px 50px;
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1400px;
-    padding: 100px 112px;
+    padding: 280px 112px;
   }
 
   @media screen and (min-width: 1920px) {
