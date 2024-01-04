@@ -1,45 +1,57 @@
 .header_container {
   width: 100%;
-  padding: 30px 80px;
+  padding: 10px 10px;
   margin-right: auto;
   margin-left: auto;
-
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  gap: 80px;
 
-  //   @media screen and (min-width: 375px) {
-  //     max-width: 327px;
-  //   }
+  @media screen and (min-width: 375px) {
+    max-width: 350px;
+  }
 
-  //   @media screen and (min-width: 475px) {
-  //     width: 427px;
-  //     max-width: 100%;
-  //   }
-  //   @media screen and (min-width: 768px) {
-  //     width: 720px;
-  //   }
-  //   @media screen and (min-width: 1280px) {
-  //     width: 1040px;
-  //   }
-  //   @media screen and (min-width: 1920px) {
-  //     width: 1680px;
-  //   }
+  @media screen and (min-width: 475px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+    padding: 30px 20px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
+    padding: 30px 50px;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1400px;
+    padding: 30px 50px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1900px;
+  }
 }
 
-.link {
-  text-decoration: none;
-  font-size: var(--primary-text-size);
-  font-weight: 500;
-  color: var(--secondary-background-color);
-  padding: 6px 16px;
-  background-color: var(--secondary-text-color);
-  border-radius: 12px;
+.btn_burger {
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon_burger {
+  width: 60px;
+  height: 60px;
+  stroke: var(--secondary-text-color);
 
   &:hover,
   &:focus {
-    color: var(--hover-focus-color);
+    stroke: var(--hover-focus-color);
     transition: var(--animation-hover);
     transform: var(--scale-transform-hover);
   }

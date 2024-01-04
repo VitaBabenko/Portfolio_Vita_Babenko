@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  font-size: var(--primary-text-size);
+  font-weight: 500;
+  color: var(--secondary-background-color);
+  padding: 6px 16px;
+  background-color: var(--secondary-text-color);
+  border-radius: 12px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: var(--secondary-text-size);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+  }
+}

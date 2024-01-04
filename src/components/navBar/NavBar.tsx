@@ -2,6 +2,10 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./NavBar.module.scss";
 
+type NavBarProps = {
+  btnClose: () => void;
+};
+
 interface Menu {
   id: number;
   title: string;
@@ -31,12 +35,13 @@ const headerMenu: Menu[] = [
   },
 ];
 
-export const NavBar = () => (
+export const NavBar = ({ btnClose }: NavBarProps) => (
   <ul className={styles.list}>
     {headerMenu.map((item) => (
       <li key={item.id}>
         <NavLink
           to={item.path}
+          onClick={btnClose}
           className={({ isActive }) => (isActive ? styles.active : styles.link)}
         >
           {item.title}
