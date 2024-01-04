@@ -12,12 +12,7 @@ export const Contact = () => (
     </h3>
     <ul className={styles.list}>
       <li className={styles.list_item}>
-        <svg
-          aria-label="icon mail"
-          // width="32px"
-          // height="32px"
-          className={styles.icon}
-        >
+        <svg aria-label="icon mail" className={styles.icon}>
           <use href={`${sprite}#icon-mail`}></use>
         </svg>
         <NavLink to="mailto:babenkovita1988@gmail.com" className={styles.link}>
@@ -25,12 +20,7 @@ export const Contact = () => (
         </NavLink>
       </li>
       <li className={styles.list_item}>
-        <svg
-          aria-label="icon call"
-          // width="32px"
-          // height="32px"
-          className={styles.icon}
-        >
+        <svg aria-label="icon call" className={styles.icon}>
           <use href={`${sprite}#icon-call`}></use>
         </svg>
         <NavLink to="tel:+380737660066" className={styles.link}>

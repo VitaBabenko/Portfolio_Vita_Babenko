@@ -1,6 +1,6 @@
 import searchMovie from "../../assets/searchMovie.png";
 import dogApp from "../../assets/dogApp.png";
-import taobao1 from "../../assets/taobao1.png";
+import taobao from "../../assets/taobao.png";
 
 import styles from "./Projects.module.scss";
 
@@ -39,7 +39,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    poster: taobao1,
+    poster: taobao,
     title: "Taobao",
     description:
       "Taobao website with a responsive layout. Website business card about the provision of information services. It's a command project. My job was to code these two sections, make them work well on different devices, and also implement a clean and organized code structure.",
