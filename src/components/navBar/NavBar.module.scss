@@ -10,14 +10,10 @@
 }
 
 .link {
-  font-size: var(--third-text-size);
+  font-size: var(--primary-text-size);
   font-weight: 500;
   color: var(--primary-text-color);
   text-decoration: none;
-
-  @media screen and (min-width: 768px) {
-    font-size: var(--primary-text-size);
-  }
 
   @media screen and (min-width: 1440px) {
     font-size: var(--secondary-text-size);
@@ -34,12 +30,8 @@
 .active {
   color: var(--hover-focus-color);
   text-decoration: none;
-  font-size: var(--third-text-size);
+  font-size: var(--primary-text-size);
   font-weight: 500;
-
-  @media screen and (min-width: 768px) {
-    font-size: var(--primary-text-size);
-  }
 
   @media screen and (min-width: 1440px) {
     font-size: var(--secondary-text-size);
