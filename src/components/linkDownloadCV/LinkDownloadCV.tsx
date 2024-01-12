@@ -1,4 +1,4 @@
-import CV from "../../assets/Vita Babenko. Frontend Developer.React.pdf";
+import CV from "../../assets/Vita Babenko. Frontend Developer.pdf";
 import styles from "./LinkDownloadCV.module.scss";
 
 export const LinkDownloadCV = () => (

@@ -42,7 +42,7 @@ const projects: Project[] = [
     poster: taobao,
     title: "Taobao",
     description:
-      "Taobao website with a responsive layout. Website business card about the provision of information services. It's a command project. My job was to code these two sections, make them work well on different devices, and also implement a clean and organized code structure.",
+      "Taobao website with a responsive layout. Website business card about the provision of information services. It's a command project. My job was to code two sections, implement a clean and organized code structure, and make them work well on different devices.",
     technologies: "Next.js, JavaScript, CSS, Figma, Git",
     url: "https://taobao-pinduoduo-yatsenko.netlify.app",
     urlGit: "https://github.com/KharlanEd/taobao-website",

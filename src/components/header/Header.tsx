@@ -11,14 +11,14 @@ type HeaderProps = {
 };
 
 export const Header = ({ isMobile }: HeaderProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const btnOpenModal = () => {
-    setIsOpen(true);
+    setIsModalOpen(true);
   };
 
   const btnCloseModal = () => {
-    setIsOpen(false);
+    setIsModalOpen(false);
   };
 
   return (
@@ -40,7 +40,9 @@ export const Header = ({ isMobile }: HeaderProps) => {
             <LinkDownloadCV />
           </>
         )}
-        {isOpen && <ModalMenu btnClose={btnCloseModal} />}
+        {isModalOpen && (
+          <ModalMenu btnClose={btnCloseModal} isOpen={isModalOpen} />
+        )}
       </div>
     </header>
   );
