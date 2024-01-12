@@ -1,0 +1,66 @@
+.error_container {
+  width: 100%;
+  padding: 150px 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 375px) {
+    max-width: 350px;
+  }
+
+  @media screen and (min-width: 475px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
+    padding: 30px 50px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1400px;
+    padding: 30px 50px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1900px;
+  }
+}
+
+.icon {
+  margin-bottom: 60px;
+  margin-left: 40px;
+  width: 200px;
+  height: 200px;
+}
+
+.link {
+  font-size: var(--primary-text-size);
+  font-weight: 500;
+  color: var(--secondary-background-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--secondary-text-color);
+  border-radius: 12px;
+  text-align: center;
+
+  @media screen and (min-width: 1440px) {
+    font-size: var(--secondary-text-size);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+  }
+}
