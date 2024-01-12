@@ -1,3 +1,3 @@
-export const ErrorPage = () => {
-  return <div>Error Page</div>;
-};
+import { Error } from "../components/error/Error";
+
+export const ErrorPage = () => <Error />;
