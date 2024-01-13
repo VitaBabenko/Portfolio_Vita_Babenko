@@ -51,6 +51,18 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  &:hover,
+  &:focus {
+    transition: var(--animation-hover);
+    transform: var(--scale-transform-hover);
+    .link {
+      color: var(--hover-focus-color);
+    }
+    .icon {
+      stroke: var(--hover-focus-color);
+    }
+  }
 }
 
 .link {
@@ -61,13 +73,6 @@
 
   @media screen and (min-width: 768px) {
     font-size: var(--secondary-text-size);
-  }
-
-  &:hover,
-  &:focus {
-    color: var(--hover-focus-color);
-    transition: var(--animation-hover);
-    transform: var(--scale-transform-hover);
   }
 }
 

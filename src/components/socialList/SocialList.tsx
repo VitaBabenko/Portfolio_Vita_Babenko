@@ -1,4 +1,5 @@
 import sprite from "../../assets/sprite.svg";
+
 import styles from "./SocialList.module.scss";
 
 export const SocialList = () => (

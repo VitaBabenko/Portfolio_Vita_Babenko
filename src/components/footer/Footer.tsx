@@ -1,4 +1,5 @@
 import sprite from "../../assets/sprite.svg";
+
 import styles from "./Footer.module.scss";
 
 export const Footer = () => (

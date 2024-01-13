@@ -1,15 +1,16 @@
 import { useEffect } from "react";
+import { FC } from "react";
+
 import { NavBar } from "../navBar/NavBar";
 import { LinkDownloadCV } from "../linkDownloadCV/LinkDownloadCV";
+
+import { ModalMenuProps } from "./types";
+
 import sprite from "../../assets/sprite.svg";
+
 import styles from "./ModalMenu.module.scss";
 
-type ModalMenuProps = {
-  btnClose: () => void;
-  isOpen: boolean;
-};
-
-export const ModalMenu = ({ isOpen, btnClose }: ModalMenuProps) => {
+export const ModalMenu: FC<ModalMenuProps> = ({ isOpen, btnClose }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

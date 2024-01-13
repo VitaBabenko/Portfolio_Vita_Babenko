@@ -1,16 +1,17 @@
 import { useState } from "react";
+import { FC } from "react";
+
 import { NavBar } from "../navBar/NavBar";
 import { LinkDownloadCV } from "../linkDownloadCV/LinkDownloadCV";
 import { ModalMenu } from "../modalMenu/ModalMenu";
+
+import { HeaderProps } from "./types";
+
 import sprite from "../../assets/sprite.svg";
 
 import styles from "./Header.module.scss";
 
-type HeaderProps = {
-  isMobile: boolean;
-};
-
-export const Header = ({ isMobile }: HeaderProps) => {
+export const Header: FC<HeaderProps> = ({ isMobile }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const btnOpenModal = () => {

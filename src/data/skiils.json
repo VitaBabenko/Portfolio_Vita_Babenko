@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "logo": "icon-javascript",
+    "name": "JavaScript"
+  },
+  {
+    "id": 2,
+    "logo": "icon-typescript",
+    "name": "TypeScript"
+  },
+  {
+    "id": 3,
+    "logo": "icon-react",
+    "name": "React"
+  },
+  {
+    "id": 4,
+    "logo": "icon-redux",
+    "name": "Redux"
+  },
+  {
+    "id": 5,
+    "logo": "icon-material-ui",
+    "name": "Material UI"
+  },
+  {
+    "id": 6,
+    "logo": "icon-css",
+    "name": "CSS3"
+  },
+  {
+    "id": 7,
+    "logo": "icon-axios",
+    "name": "Axios"
+  },
+  {
+    "id": 8,
+    "logo": "icon-git",
+    "name": "Git"
+  },
+  {
+    "id": 9,
+    "logo": "icon-html5",
+    "name": "HTML5"
+  },
+  {
+    "id": 10,
+    "logo": "icon-webpack",
+    "name": "Webpack"
+  },
+  {
+    "id": 11,
+    "logo": "icon-parcel",
+    "name": "Parcel"
+  },
+  {
+    "id": 12,
+    "logo": "icon-vite",
+    "name": "Vite"
+  },
+  {
+    "id": 13,
+    "logo": "icon-sass",
+    "name": "Sass"
+  },
+  {
+    "id": 14,
+    "logo": "icon-figma",
+    "name": "Figma"
+  },
+  {
+    "id": 15,
+    "logo": "icon-storybook",
+    "name": "Storybook"
+  },
+  {
+    "id": 16,
+    "logo": "icon-styled-components",
+    "name": "Styled-components"
+  }
+]

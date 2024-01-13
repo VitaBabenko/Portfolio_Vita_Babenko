@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "poster": "searchMovie",
+    "title": "MovieSearch",
+    "description": "MovieSearch website with a responsive layout. This is a simple movie search website, where you can read its description, cast, and reviews.",
+    "technologies": "React, React Router, Axios, JavaScript, styled-components, Figma, Git",
+    "url": "https://vitababenko.github.io/react-router-search-movies/",
+    "urlGit": "https://github.com/VitaBabenko/react-router-search-movies"
+  },
+  {
+    "id": 2,
+    "poster": "dogApp",
+    "title": "Dog App",
+    "description": "Dog App website with a responsive layout. This is a website where you can find out about different breeds of dogs and read their characteristics. You can also add your favorite dogs, vote for those you like or not. And upload your dog photos.",
+    "technologies": "Vite, React, TypeScript, Storybook, Material-UI, rtk query, Figma, Git",
+    "url": "https://dog-app-init.vercel.app",
+    "urlGit": "https://github.com/VitaBabenko/dog-app-init"
+  },
+  {
+    "id": 3,
+    "poster": "taobao",
+    "title": "Taobao",
+    "description": "Taobao website with a responsive layout. Website business card about the provision of information services. It's a command project. My job was to code two sections, implement a clean and organized code structure, and make them work well on different devices.",
+    "technologies": "Next.js, JavaScript, CSS, Figma, Git",
+    "url": "https://taobao-pinduoduo-yatsenko.netlify.app",
+    "urlGit": "https://github.com/KharlanEd/taobao-website"
+  }
+]
