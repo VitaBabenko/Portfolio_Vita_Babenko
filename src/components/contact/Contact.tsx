@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
+
 import { SocialList } from "../socialList/SocialList";
+
 import sprite from "../../assets/sprite.svg";
 
 import styles from "./Contact.module.scss";
 
 export const Contact = () => (
-  <div className={styles.contact_container}>
+  <section className={styles.contact_container}>
     <h3 className={styles.title}>
       Feel free to reach out to me if you're looking for a developer, have a
       query, or simply want to connect.
@@ -32,5 +34,5 @@ export const Contact = () => (
       You may also find me on these platforms!
     </p>
     <SocialList />
-  </div>
+  </section>
 );

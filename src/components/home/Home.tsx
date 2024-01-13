@@ -1,11 +1,13 @@
 import { SocialList } from "../socialList/SocialList";
+
 import photo from "../../assets/vita.jpeg";
 import sprite from "../../assets/sprite.svg";
+
 import styles from "./Home.module.scss";
 
 export const Home = () => {
   return (
-    <div className={styles.home_container}>
+    <section className={styles.home_container}>
       <img src={photo} alt="photo" className={styles.photo} />
       <div>
         <h1 className={styles.title}>Hi, I`m Vita</h1>
@@ -27,6 +29,6 @@ export const Home = () => {
         </div>
         <SocialList />
       </div>
-    </div>
+    </section>
   );
 };

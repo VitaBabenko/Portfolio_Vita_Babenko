@@ -1,43 +1,18 @@
+import { FC } from "react";
+
 import { NavLink } from "react-router-dom";
+
+import { NavBarProps, Menu } from "./types";
+
+import headerMenu from "../../data/headerMenu.json";
 
 import styles from "./NavBar.module.scss";
 
-type NavBarProps = {
-  btnClose: () => void;
-};
+const menuLink: Menu[] = headerMenu;
 
-interface Menu {
-  id: number;
-  title: string;
-  path: string;
-}
-
-const headerMenu: Menu[] = [
-  {
-    id: 1,
-    title: "Home",
-    path: "/",
-  },
-  {
-    id: 2,
-    title: "About Me",
-    path: "/about",
-  },
-  {
-    id: 3,
-    title: "My projects",
-    path: "/projects",
-  },
-  {
-    id: 4,
-    title: "Contact",
-    path: "/contact",
-  },
-];
-
-export const NavBar = ({ btnClose }: NavBarProps) => (
+export const NavBar: FC<NavBarProps> = ({ btnClose }) => (
   <ul className={styles.list}>
-    {headerMenu.map((item) => (
+    {menuLink.map((item) => (
       <li key={item.id}>
         <NavLink
           to={item.path}
