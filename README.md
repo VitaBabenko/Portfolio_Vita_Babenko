@@ -1,5 +1,4 @@
-
-# Portfolio Vita Babenko
+# Vita Babenko Frontend Developer
 
 ## Get Started
 
