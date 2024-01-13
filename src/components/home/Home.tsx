@@ -22,7 +22,7 @@ export const Home = () => {
           impression.
         </p>
         <div className={styles.wrap}>
-          <svg aria-label="icon location" width="40px" height="40px">
+          <svg aria-label="icon location" width={30} height={30}>
             <use href={`${sprite}#icon-locate-Icon`}></use>
           </svg>
           <p>Kyiv, Ukraine</p>
