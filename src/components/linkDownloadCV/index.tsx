@@ -1,0 +1,1 @@
+export { LinkDownloadCV } from "./LinkDownloadCV";

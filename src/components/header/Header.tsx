@@ -1,48 +1,41 @@
-import { useState } from "react";
-import { FC } from "react";
+import { FC, useState } from "react";
 
-import { NavBar } from "../navBar/NavBar";
-import { LinkDownloadCV } from "../linkDownloadCV/LinkDownloadCV";
-import { ModalMenu } from "../modalMenu/ModalMenu";
+import { ModalMenu } from "../modalMenu";
+import { NavBar } from "../navBar";
+import { LinkDownloadCV } from "../linkDownloadCV";
+import { ButtonMenu } from "../buttonMenu";
 
 import { HeaderProps } from "./types";
-
-import sprite from "../../assets/sprite.svg";
 
 import styles from "./Header.module.scss";
 
 export const Header: FC<HeaderProps> = ({ isMobile }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isActive, setIsActive] = useState<boolean | undefined>();
 
-  const btnOpenModal = () => {
-    setIsModalOpen(true);
+  const btnToggleActive = () => {
+    setIsActive(!isActive);
   };
 
   const btnCloseModal = () => {
-    setIsModalOpen(false);
+    setIsActive(false);
   };
 
   return (
     <header>
       <div className={styles.header_container}>
         {isMobile ? (
-          <button
-            type="button"
-            className={styles.btn_burger}
-            onClick={btnOpenModal}
-          >
-            <svg aria-label="icon burger" className={styles.icon_burger}>
-              <use href={`${sprite}#icon-burger`}></use>
-            </svg>
-          </button>
+          <ButtonMenu
+            toggleActiveBtn={btnToggleActive}
+            isBtnActive={isActive}
+          />
         ) : (
           <>
             <NavBar btnClose={btnCloseModal} />
             <LinkDownloadCV />
           </>
         )}
-        {isModalOpen && (
-          <ModalMenu btnClose={btnCloseModal} isOpen={isModalOpen} />
+        {isActive && (
+          <ModalMenu btnClose={btnCloseModal} isBtnActive={isActive} />
         )}
       </div>
     </header>

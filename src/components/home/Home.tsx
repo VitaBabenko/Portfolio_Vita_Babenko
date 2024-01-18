@@ -1,4 +1,4 @@
-import { SocialList } from "../socialList/SocialList";
+import { SocialList } from "../socialList";
 
 import photo from "../../assets/vita.jpeg";
 import sprite from "../../assets/sprite.svg";
