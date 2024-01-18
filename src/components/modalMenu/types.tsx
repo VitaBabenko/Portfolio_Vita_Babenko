@@ -1,4 +1,4 @@
 export type ModalMenuProps = {
   btnClose: () => void;
-  isOpen: boolean;
+  isBtnActive: boolean | undefined;
 };

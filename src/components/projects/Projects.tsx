@@ -1,4 +1,4 @@
-import { ItemProject } from "../itemProject/ItemProject";
+import { ItemProject } from "../itemProject";
 
 import { Project } from "./types";
 
@@ -28,6 +28,7 @@ export const Projects = () => (
 
           return (
             <ItemProject
+              key={id}
               id={id}
               posterImg={posterImg}
               title={title}

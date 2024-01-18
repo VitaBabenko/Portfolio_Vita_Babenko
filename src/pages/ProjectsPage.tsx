@@ -1,3 +1,3 @@
-import { Projects } from "../components/projects/Projects";
+import { Projects } from "../components/projects";
 
 export const ProjectsPage = () => <Projects />;

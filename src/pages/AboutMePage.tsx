@@ -1,3 +1,3 @@
-import { AboutMe } from "../components/aboutMe/AboutMe";
+import { AboutMe } from "../components/aboutMe";
 
 export const AboutMePage = () => <AboutMe />;

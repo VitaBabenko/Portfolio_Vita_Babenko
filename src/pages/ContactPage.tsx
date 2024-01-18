@@ -1,3 +1,3 @@
-import { Contact } from "../components/contact/Contact";
+import { Contact } from "../components/contact";
 
 export const ContactPage = () => <Contact />;

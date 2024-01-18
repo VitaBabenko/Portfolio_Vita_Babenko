@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { SocialList } from "../socialList/SocialList";
+import { SocialList } from "../socialList";
 
 import sprite from "../../assets/sprite.svg";
 

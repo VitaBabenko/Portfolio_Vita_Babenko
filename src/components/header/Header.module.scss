@@ -36,23 +36,3 @@
     max-width: 1900px;
   }
 }
-
-.btn_burger {
-  display: block;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.icon_burger {
-  width: 60px;
-  height: 60px;
-  stroke: var(--secondary-text-color);
-
-  &:hover,
-  &:focus {
-    stroke: var(--hover-focus-color);
-    transition: var(--animation-hover);
-    transform: var(--scale-transform-hover);
-  }
-}
