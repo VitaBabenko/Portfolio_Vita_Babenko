@@ -1,13 +1,41 @@
-.btn {
+.burger {
+  display: flex;
   position: relative;
+  z-index: 150;
+  align-items: center;
+  justify-content: space-around;
   width: 60px;
   height: 50px;
-  padding: 0;
-  cursor: pointer;
   border: 2px solid var(--hover-focus-color);
   border-radius: 6px;
   background-color: transparent;
-  z-index: 150;
+  cursor: pointer;
+
+  & span {
+    height: 3px;
+    width: 55%;
+    transform: scale(1);
+    background-color: var(--secondary-text-color);
+    border-radius: 5px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 75%;
+    background-color: var(--secondary-text-color);
+    border-radius: 5px;
+  }
+
+  &::before {
+    top: 25%;
+  }
+
+  &::after {
+    bottom: 25%;
+  }
 
   &:hover,
   &:focus {
@@ -15,46 +43,77 @@
     transition: var(--animation-hover);
   }
 
-  &:hover .btn_line,
-  &:focus .btn_line {
+  &:hover span,
+  &:focus span {
+    background-color: var(--hover-focus-color);
+    transition: var(--animation-hover);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:hover::before,
+  &:focus::after {
     background-color: var(--hover-focus-color);
     transition: var(--animation-hover);
   }
 }
 
-.btn_line {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
+.active_burger {
+  display: flex;
+  position: relative;
+  z-index: 150;
+  align-items: center;
+  justify-content: space-around;
+  width: 60px;
+  height: 50px;
+  border: 2px solid var(--hover-focus-color);
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
 
-  height: 3px;
-  background-color: var(--secondary-text-color);
-  border-radius: 5px;
-  transform-origin: 50% 50%;
-
-  &:nth-child(1) {
-    transform: translate(-50%, -12px);
-    width: 45px;
+  & span {
+    height: 3px;
+    width: 60%;
+    transform: scale(1);
+    background-color: var(--secondary-text-color);
+    border-radius: 5px;
   }
 
-  &:nth-child(2) {
-    transform: translate(-50%, -50%);
-    width: 35px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background-color: var(--secondary-text-color);
+    border-radius: 5px;
   }
 
-  &:nth-child(3) {
-    transform: translate(-50%, 9px);
-    width: 45px;
+  & span {
+    transform: scale(0);
   }
 
-  &:nth-child(4) {
-    transform: translate(-50%, -50%) rotate(-45deg);
-    width: 45px;
+  &::before {
+    top: 47%;
+    transform: rotate(-45deg) translate(0, -25%);
   }
 
-  &:nth-child(5) {
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 45px;
+  &::after {
+    top: 47%;
+    transform: rotate(45deg) translate(0, 25%);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--secondary-text-color);
+    transition: var(--animation-hover);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:hover::before,
+  &:focus::after {
+    background-color: var(--hover-focus-color);
+    transition: var(--animation-hover);
   }
 }
